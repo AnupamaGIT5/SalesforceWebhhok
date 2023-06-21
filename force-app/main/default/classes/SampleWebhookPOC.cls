@@ -4,6 +4,7 @@ global with sharing class SampleWebhookPOC {
     @HttpPost
 global static void makeData(){
     try{
+        //
         RestRequest req = RestContext.request;
         RestResponse res = RestContext.response;
 Account acc = [select id from account where id = '0017F000025BJJtQAO'];    
