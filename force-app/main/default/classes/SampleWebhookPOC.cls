@@ -16,7 +16,7 @@ Account acc = [select id from account where id = '0017F000025BJJtQAO'];
             ps = (pusher)parser.readValueAs(pusher.class);
             }
         }
-        acc.WebhookResponse__c = ps.name + ps.email;
+        acc.WebhookResponse__c = ps.name ;
 
 //
         update acc;
