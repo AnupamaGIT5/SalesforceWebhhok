@@ -4,6 +4,7 @@ global with sharing class SampleWebhookPOC {
     @HttpPost
     //commit with request
 global static void makeData(){
+    
     try{
         RestRequest req = RestContext.request;
         RestResponse res = RestContext.response;
